@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+   
     return MaterialApp(
       title: 'ECOPROTECT',
       theme: ThemeData(
@@ -19,17 +20,21 @@ class MyApp extends StatelessWidget {
         fontFamily: GoogleFonts.lato(
           fontWeight: FontWeight.w700,
         ).fontFamily,
+      
       ),
+      
       home: AnimatedSplashScreen(
         splash: Image.asset(
-          'images/eco_logo.jpg',
+          'images/circulo.gif',
         ),
         nextScreen: PagePrincipal(),
         backgroundColor: Colors.white,
-        duration: 2500,
         splashIconSize: 300,
-        splashTransition: SplashTransition.rotationTransition,
+      
       ),
+
+      
     );
+
   }
 }
